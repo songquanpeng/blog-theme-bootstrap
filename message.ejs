@@ -1,10 +1,7 @@
 <%- include('./partials/header') %>
-<article class="message is-danger">
-    <div class="message-header">
-        <p><%= title %></p>
+<div class="container">
+    <div id="info-message" class="alert alert-success alert-dismissible fade show shadow-box">
+        <strong><%= title %>:</strong><p><%= message %></p>
     </div>
-    <div class="message-body">
-        <%= message %>
-    </div>
-</article>
+</div>
 <%- include('./partials/footer') %>

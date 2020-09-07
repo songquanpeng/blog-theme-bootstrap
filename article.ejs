@@ -1,12 +1,12 @@
 <%- include('./partials/header') %>
 
-<div class="article-container">
-    <article>
+<div class="container article-container">
+    <article class="shadow-box" style="padding: 16px">
         <%- include('./partials/page-info') %>
         <%-page.converted_content%>
-        <p class="copyright"><strong>Links: <a href="<%-page.link%>"><%-page.link%></a></strong></p>
-        <%- config.copyright %>
-        <%- config.ad %>
+        <% if(config.enableAd){ %>
+            <%- config.ad.articleAd %>
+        <% } %>
     </article>
     <%- include('./partials/prev-next') %>
     <%- include('./partials/comment') %>
