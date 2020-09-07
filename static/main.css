@@ -24,15 +24,13 @@ a:hover {
 }
 
 .pagination-previous {
-    padding-left: .75em;
-    padding-right: .75em;
+    padding: .75em;
     white-space: nowrap;
 }
 
 .pagination-next {
     order: 3;
-    padding-left: .75em;
-    padding-right: .75em;
+    padding: .75em;
     white-space: nowrap;
 }
 

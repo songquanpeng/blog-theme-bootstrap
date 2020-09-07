@@ -11,12 +11,11 @@
                             <% page.tag.trim().split(" ").forEach(function (tag) { if(tag !== ""){ %>
                             <span class="badge badge-primary badge-hover"><a href='/tag/<%= tag %>' style="color: white"><%= tag %></a></span>
                             <% }}); %>
-                            <span class="badge badge-success badge-hover"
-                                  onclick="event.stopPropagation();location.href='/user/<%= page.author %>'"><%= page.author %></span>
-                            <span class="badge badge-secondary badge-hover"
-                                  onclick='event.stopPropagation();onTimeTagClicked("<%= page.time %>")'><%= page.time %></span>
-                            <span class="badge badge-info badge-hover"
-                                  onclick="location.href='/page/<%= page.link %>'">Views: <%= page.view %></span>
+                            <span class="badge badge-success badge-hover"><%= page.author %></span>
+                            <span class="badge badge-secondary badge-hover">
+                                <a href="/archive/<%= page.post_time.split('-')[0] + '/' + page.post_time.split('-')[1] %>"><%= page.post_time.substring(0, 10) %></a>
+                            </span>
+                            <span class="badge badge-info badge-hover">Views: <%= page.view %></span>
                         </div>
                         <p class="card-text">
                             <%= page.description !== undefined && page.description.trim() !== "" ? page.description : "No description" %>
