@@ -1,11 +1,11 @@
 <%- include('./partials/header') %>
 
-<div class="container article-container">
+<div class="container article-container code-page">
     <article class="shadow-box" style="padding: 16px">
         <%- include('./partials/page-info') %>
-        <div class="control-panel">
-            <button class="button is-light" id="darkBtn" onclick="changeBackground()">Focus</button>
-            <button class="button is-light" onclick="copyCode()">Copy</button>
+        <div class="control-panel" style="margin-top: 16px">
+            <button class="btn btn-light" id="darkBtn" onclick="changeBackground()">Focus</button>
+            <button class="btn btn-light" onclick="copyCode()">Copy</button>
         </div>
         <pre>
             <code id="code-display"><%=page.content%></code>

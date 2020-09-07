@@ -304,3 +304,8 @@ article code {
 article .copyright{
     display: none;
 }
+
+.raw-content {
+    overflow-y: hidden;
+    overflow-x: scroll;
+}

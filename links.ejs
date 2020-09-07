@@ -1,15 +1,14 @@
 <%- include('./partials/header') %>
-<div class="links">
-    <article>
+<div class="container article-container">
+    <article style="padding: 16px">
         <%- include('./partials/page-info') %>
     </article>
-
     <% if (linkList && linkList.length){ %>
         <% linkList.forEach((link)=>{ %>
         <div class="link-card">
             <%if(link && link.image ===""){
                 if(link.link.endsWith("/")) {
-                  link.image  = link.link + "favicon.ico";
+                    link.image  = link.link + "favicon.ico";
                 }else {
                     link.image  = link.link + "/favicon.ico";
                 }
@@ -24,6 +23,7 @@
     <%- include('./partials/prev-next') %>
     <%- include('./partials/comment') %>
 </div>
+
 <style>
     .link-card {
         padding: 1em 0;
