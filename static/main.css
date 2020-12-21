@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=Roboto&display=swap');
-
 body {
     font-family: Verdana, Candara, Arial, Microsoft YaHei, sans-serif;
     line-height: 1.6;
@@ -224,7 +222,7 @@ article h3,
 article h4,
 article h5,
 article h6 {
-    font-family: "Times New Roman", Times, Georgia, STKaiti, KaiTi, 'Ma Shan Zheng', SimSun, serif;
+    font-family: "Times New Roman", Times, Georgia, STKaiti, KaiTi, SimSun, serif;
     font-weight: normal;
 }
 
