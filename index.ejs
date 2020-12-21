@@ -7,7 +7,7 @@
                     <div class="card-body">
                         <h4 class="card-title font-weight-bold"
                             style="cursor: pointer"><a href="/page/<%= page.link %>" style="color: black"><%= page.title ? page.title : 'No title' %></a></h4>
-                        <div>
+                        <div class="card-tag">
                             <% page.tag.trim().split(" ").forEach(function (tag) { if(tag !== ""){ %>
                             <span class="badge badge-primary badge-hover"><a href='/tag/<%= tag %>' style="color: white"><%= tag %></a></span>
                             <% }}); %>
