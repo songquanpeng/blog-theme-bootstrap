@@ -317,3 +317,13 @@ article .copyright {
 .main-content {
     margin-bottom: 16px;
 }
+
+#toc {
+    margin-top: 8px;
+    list-style-type: circle;
+    padding-left: 8px;
+}
+
+#toc a {
+    color: black;
+}
