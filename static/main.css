@@ -304,6 +304,11 @@ article code {
     margin: 0;
     font-size: 85%;
     border-radius: 6px;
+    font-family: 'Cascadia Code', Consolas, 'Courier New', monospace, 微软雅黑;
+}
+
+article pre code {
+    font-size: 95%;
 }
 
 article .copyright {
