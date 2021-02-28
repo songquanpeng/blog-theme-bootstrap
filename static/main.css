@@ -68,7 +68,7 @@ a:hover {
 
 .article-container {
     /*box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);*/
-    padding-top: 16px;
+    padding-top: 8px;
     padding-bottom: 16px;
     font-size: 16px;
     word-break: break-word;
