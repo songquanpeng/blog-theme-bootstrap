@@ -328,12 +328,12 @@ article .copyright {
     margin-bottom: 16px;
 }
 
-#toc {
+.toc-list {
     margin-top: 8px;
     list-style-type: circle;
     padding-left: 8px;
 }
 
-#toc a {
+.toc-list a {
     color: black;
 }
