@@ -8,8 +8,8 @@
                         <div class="card article-list shadow-box bg-transparent">
                             <div class="card-body">
                                 <h4 class="card-title font-weight-bold"
-                                    style="cursor: pointer"><a href="/page/<%= page.link %>"
-                                                               style="color: black"><%= page.title ? page.title : 'No title' %></a>
+                                    style="cursor: pointer"><a href="/page/<%= page.link %>" style="color: black">
+                                        <%= page.pageStatus === 2 ? '「置顶」' : '' %><%= page.title ? page.title : '无标题' %></a>
                                 </h4>
                                 <div class="card-tag">
                                     <% page.tag.trim().split(" ").forEach(function (tag) { if(tag !== ""){ %>
@@ -24,7 +24,7 @@
                                     <span class="badge badge-info badge-hover">Views: <%= page.view %></span>
                                 </div>
                                 <p class="card-text">
-                                    <%= page.description ? page.description : "No description" %>
+                                    <%= page.description ? page.description : "无描述信息" %>
                                 </p>
                             </div>
                         </div>
