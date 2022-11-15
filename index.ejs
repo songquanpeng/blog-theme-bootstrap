@@ -12,7 +12,7 @@
                                         <%= page.pageStatus === 2 ? '「置顶」' : '' %><%= page.title ? page.title : '无标题' %></a>
                                 </h4>
                                 <div class="card-tag">
-                                    <% page.tag.trim().split(" ").forEach(function (tag) { if(tag !== ""){ %>
+                                    <% page.tag.trim().split(";").forEach(function (tag) { if(tag !== ""){ %>
                                         <span class="badge badge-primary badge-hover"><a href='/tag/<%= tag %>'
                                                                                          style="color: white"><%= tag %></a></span>
                                     <% }}); %>
