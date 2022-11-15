@@ -183,9 +183,9 @@ img {
 }
 
 @media screen and (max-width: 1350px) and (min-width: 980px) {
-    .nav-text {
-        display: none;
-    }
+    /*.nav-text {*/
+    /*    display: none;*/
+    /*}*/
 }
 
 .home-banner {
