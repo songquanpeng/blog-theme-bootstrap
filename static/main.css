@@ -340,3 +340,7 @@ article .copyright {
 iframe {
     border: 0;
 }
+
+.info > span {
+    margin-right: 2px;
+}

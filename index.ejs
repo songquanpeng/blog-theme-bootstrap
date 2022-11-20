@@ -42,10 +42,10 @@
                         <img src="<%= config.brand_image %>" class="card-img-top" alt="brand_image">
                     <% }%>
                     <p class="card-text">
-                        Memory occupied: <%= (process.memoryUsage().rss / (1024 *1024)).toFixed(2) %> MB
+                        内存占用：<%= (process.memoryUsage().rss / (1024 *1024)).toFixed(2) %> MB
                     </p>
-                    <a href="https://github.com/songquanpeng/blog" class="card-link">System: <%= systemName %></a>
-                    <a href="https://github.com/songquanpeng/blog-theme-bootstrap" class="card-link">Theme: Bootstrap</a>
+                    <a href="https://github.com/songquanpeng/blog" class="card-link">系统：<%= systemName %></a>
+                    <a href="https://github.com/songquanpeng/blog-theme-bootstrap" class="card-link">主题：Bootstrap</a>
                 </div>
             </div>
             <article class="shadow-box" style="padding: 20px">
